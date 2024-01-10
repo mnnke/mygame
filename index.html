@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPLIMENTS</title>
+    <script src="java.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Additional meta tags, stylesheets, or scripts can be included here -->
+</head>
+<body>
+    <h1 class="Heading">Do you want to see a compliment?</h1>
+
+    <button onclick="generateCompliment()" id="yesButton">Yes</button> 
+
+    <p id="complimentDisplay"></p>
+
+    <button onclick="showInput()" id="noButton">No</button> 
+
+    <div id="inputContainer" style="display: none;">
+        <p id="question">Awwww, Why?</p>
+        <input type="text" id="userResponse" placeholder="Enter your response...">
+        <button id="sendButton" onclick="sendResponse()">Send</button>
+    </div>
+
+    <p id="responseDisplay"></p>
+
+    <button onclick="resetForm()">Reset</button>
+
+</body>
+</html>

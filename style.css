@@ -1,0 +1,80 @@
+body {
+    background-image: url('IMG_0406.JPG');
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px; 
+}
+
+
+/* Normal state */
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    border: 1px solid ;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#complimentDisplay {
+    color: white;
+}
+
+#responseDisplay {
+    color: white;
+}
+
+#question {
+    color: white;
+}
+
+#userResponse {
+    background-color: black;
+    color: white;
+}
+
+/* Hover state */
+button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Pressed state */
+button:active {
+    background-color: maroon;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+button, #sendButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    width: 150px;
+    cursor: pointer;
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+}
